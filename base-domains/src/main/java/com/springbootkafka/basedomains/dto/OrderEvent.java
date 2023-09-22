@@ -7,11 +7,10 @@ import lombok.NoArgsConstructor;
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
-public class Order {
+public class OrderEvent {
 
-    private int orderId;
-    private String name;
-    private int quantity;
-    private double price;
+    private String message;
+    private String status;
+    private Order order;
 
 }
